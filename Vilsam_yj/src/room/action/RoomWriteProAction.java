@@ -21,7 +21,7 @@ public class RoomWriteProAction implements Action {
 		ActionForward forward = null;
 		RoomBean roomBean = null;
 		String realFolder = "";
-		String saveFolder = "/upload";
+		String saveFolder = "/upload/room";
 		int fileSize = 5 * 1024 * 1024;
 		ServletContext context = request.getServletContext();
 		realFolder = context.getRealPath(saveFolder);

@@ -21,7 +21,7 @@ public class ProductWriteProAction implements Action {
 		ActionForward forward = null;
 		ProductBean productBean = null;
 		String realFolder = "";
-		String saveFolder = "/upload";
+		String saveFolder = "/upload/product";
 		int fileSize = 5 * 1024 * 1024;
 		ServletContext context = request.getServletContext();
 		realFolder = context.getRealPath(saveFolder);

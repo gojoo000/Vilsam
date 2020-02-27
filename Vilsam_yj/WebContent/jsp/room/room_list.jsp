@@ -62,7 +62,7 @@ table td, tr {
   								<li class="list-item">
     							<div class="list-content"> 
       								<h1>${room.room_name}</h1><br>
-      								<img src="/Vilsam_yj/upload/${room.room_image}" alt="" />
+      								<img src="/Vilsam_yj/upload/room/${room.room_image}" alt="" />
       								<br><br><br>
       								<p>Room Size : ${room.room_size}</p>
       								<a href="#">대여료 : ${room.room_price}</a><br><br>

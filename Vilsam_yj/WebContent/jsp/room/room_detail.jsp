@@ -174,7 +174,7 @@ $(function() {
 						<div class="room-meta-data">
 							<form action="/Vilsam_yj/reservationWritePro.reser" id="reserForm">
 							 <input type="hidden" id="MEMBER_ID" name="MEMBER_ID" value="${MEMBER_ID}">
-								<img class="room-image" src="/Vilsam_yj/upload/${room.room_image }"> <br>
+								<img class="room-image" src="/Vilsam_yj/upload/room/${room.room_image }"> <br>
 								<br> <input type="hidden" id="room_num" name="room_num" value="${room.room_num }">
 								<div class="line"></div>
 								대여비
