@@ -86,7 +86,7 @@ $(function() {
 	        //room_num 를 param.
 	        var room_num =  $("#room_num").val(); 
 	        var reser_date =  $("#reserDate").val();
-	        alert(reser_date);
+	        //alert(reser_date);
 	        $.ajax({
 	            /* async: true, */
 	            type : 'POST',
@@ -131,8 +131,8 @@ $(function() {
 	                dataType: 'json',
 	                success: function(data) {//5.map이 일로들어옴
 	                   var json = data.calendarList;
-	                /*    alert(json);
-	                   alert(data); */
+	                   alert(json);
+	                   alert(data);
 	                    var events = [];
 	                    $.each(json, function(i, obj) { //i(json에 담긴크기만큼(인덱스)) 반복
 	                       events.push({
@@ -141,7 +141,6 @@ $(function() {
 	                          start: obj.reser_date, //시작날짜 
 	                          allDay: true});
 	                    });
-	                    
 	                    callback(events); //뿌려주기
 	                }
 	            });

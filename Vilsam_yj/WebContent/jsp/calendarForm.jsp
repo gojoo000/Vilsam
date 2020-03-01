@@ -43,8 +43,6 @@ $(document).ready(function() {
                 dataType: 'json',
                 success: function(data) {//5.map이 일로들어옴
                    var json = data.calendarList;
-                   alert(json);
-                   alert(data);
                     var events = [];
                     $.each(json, function(i, obj) { //i(json에 담긴크기만큼(인덱스)) 반복
                        events.push({
@@ -64,7 +62,7 @@ $(document).ready(function() {
 });
 
 </script>
-    
+<title>예약 리스트</title>
     
 </head>
 

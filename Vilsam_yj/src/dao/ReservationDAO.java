@@ -46,7 +46,7 @@ public class ReservationDAO {
 				listCount = rs.getInt(1); // �쟾泥� 湲� 媛��닔瑜� listCount�뿉 �븷�떦(���옣)
 			}
 		} catch (Exception e) {
-			System.out.println("getListCount �뿉�윭 : " + e);
+			System.out.println("getListCount 애러: " + e);
 		} finally {
 			close(rs);
 			close(pstmt);
@@ -83,7 +83,7 @@ public class ReservationDAO {
 			insertCount = pstmt.executeUpdate();
 
 		} catch (Exception ex) {
-			System.out.println("ReservationInsert �뿉�윭 : " + ex);
+			System.out.println("ReservationInsert 에러 : " + ex);
 		} finally {
 			close(rs);
 			close(pstmt);
@@ -129,7 +129,7 @@ public class ReservationDAO {
 
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "SELECT R.RESER_NUM, R.RESER_DATE, R.MEMBER_ID, R.ROOM_NUM";
+		String sql = "SELECT R.RESER_NUM, R.RESER_DATE, R.MEMBER_ID, R.ROOM_NUM, O.ROOM_NAME";
 		sql += " FROM TB_RESERVATION R, TB_ROOM O, TB_MEMBER M ";
 		sql += "WHERE R.ROOM_NUM = O.ROOM_NUM AND R.MEMBER_ID = M.MEMBER_ID ";
 		sql += "GROUP BY R.MEMBER_ID ";
@@ -305,7 +305,7 @@ public class ReservationDAO {
 	               rsv = new ReservationBean();
 	               rsv.setReser_date(rs.getString("RESER_DATE"));
 	               rsv.setRoom_name(rs.getString("ROOM_NAME"));               
-	               System.out.println("################## RESER_DATE "+rs.getString("RESER_DATE"));
+	               //System.out.println("################## RESER_DATE "+rs.getString("RESER_DATE"));
 	               reserveList.add(rsv);
 	            } while (rs.next());
 	         }

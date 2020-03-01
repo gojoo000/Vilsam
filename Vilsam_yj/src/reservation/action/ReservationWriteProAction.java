@@ -46,7 +46,7 @@ public class ReservationWriteProAction implements Action {
 			
 			forward = new ActionForward();
 			forward.setRedirect(true);
-			forward.setPath("/jsp/room/room_list.jsp");
+			forward.setPath("/Vilsam_yj/roomList.room");
 			request.getSession().setAttribute("msg", "2");
 			
 		}

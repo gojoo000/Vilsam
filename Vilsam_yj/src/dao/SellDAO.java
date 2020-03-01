@@ -112,17 +112,15 @@ public class SellDAO {
 
 		String sql = "SELECT S.SELLNUM, P.PRODUCT_NUM, MEMBER_ID,SELL_COUNT,SELL_DATE, P.PRODUCT_NAME ";
 				sql += "FROM TB_PRODUCT P JOIN TB_SELLLIST S ";
+				sql += "ON P.PRODUCT_NUM = S.PRODUCT_NUM ";
 				//sql += "WHERE P.PRODUCT_NUM = S.PRODUCT_NUM ";
 		if (MEMBER_TYPE.equals("admin")) {
-			sql += "ON P.PRODUCT_NUM = S.PRODUCT_NUM ";
-			sql += " GROUP BY SELLNUM";
 		}else {
 			//sql += " WHERE S.MEMBER_ID='"+MEMBER_ID+"'";	
 			sql += " WHERE S.MEMBER_ID='"+MEMBER_ID+"'";
-			sql += "ON P.PRODUCT_NUM = S.PRODUCT_NUM ";
-			sql += " GROUP BY SELLNUM";
 		//sql += " GROUP BY SELLLIST.PRODUCT_NUM";
 		}
+		sql += " GROUP BY SELLNUM";
 		
 
 
