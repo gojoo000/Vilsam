@@ -249,7 +249,7 @@ margin-left: 5px;
  /*MediaQuerys*/
  @media (max-width: 600px) {
 .menu {
- display:none;
+ /* display:none; */
  }
  .xs-menu li a {
 
