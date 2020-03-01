@@ -38,7 +38,7 @@ public class MemberLoginAction implements Action {
 	   		session.setAttribute("MEMBER_TYPE", loginResult);
 			
 			if (loginResult.equals("admin")) {
-				forward.setPath("/Vilsam_yj/productList.pro");
+				forward.setPath("/productList.pro");
 			} else {
 				 forward.setPath("/index.jsp"); 
 			}
