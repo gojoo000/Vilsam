@@ -186,7 +186,7 @@
 								<tr>
 									<td><label for="MEMBER_PHONE1">연락처 : </label></td>
 									<td colspan="3">
-										<input type="text" name="MEMBER_PHONE2"	size="13" id="MEMBER_PHONE2" maxlength="10" class="inputbox">
+										<input type="text" name="MEMBER_PHONE2"	size="13" id="MEMBER_PHONE2" maxlength="11" class="inputbox">
 									</td>
 								</tr>
 								<tr>

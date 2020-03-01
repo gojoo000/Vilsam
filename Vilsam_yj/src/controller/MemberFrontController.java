@@ -36,7 +36,7 @@ public class MemberFrontController extends javax.servlet.http.HttpServlet {
 	 if (command.equals("/memberLogin.me")) {
 			forward = new ActionForward();
 			forward.setRedirect(true);
-			forward.setPath("/jsp/loginForm.jsp");
+			forward.setPath("/Vilsam_yj/jsp/loginForm.jsp");
 		} else if (command.equals("/jsp/memberJoin.me")) {
 			forward = new ActionForward();
 			forward.setRedirect(false);

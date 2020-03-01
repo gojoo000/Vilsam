@@ -29,7 +29,7 @@ public class MemberLoginAction implements Action {
 		
 		if (loginResult == null) { /* || loginResult.equals("") */
 			out.println("<script>");
-			out.println("alert('ID/PW가 일치하지');");
+			out.println("alert('ID/PW가 일치하지 않습니다.');");
 			out.println("location.href='/Vilsam_yj/memberLogin.me';");
 			out.println("</script>");
 		} else {
@@ -38,7 +38,7 @@ public class MemberLoginAction implements Action {
 	   		session.setAttribute("MEMBER_TYPE", loginResult);
 			
 			if (loginResult.equals("admin")) {
-				forward.setPath("/memberListAction.me");
+				forward.setPath("/Vilsam_yj/productList.pro");
 			} else {
 				 forward.setPath("/index.jsp"); 
 			}

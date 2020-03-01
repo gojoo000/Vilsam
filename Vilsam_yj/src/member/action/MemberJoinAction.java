@@ -47,7 +47,7 @@ public class MemberJoinAction implements Action {
 			
 			forward = new ActionForward();
 			forward.setRedirect(true);
-			forward.setPath("./memberLogin.me");
+			forward.setPath("/Vilsam_yj/memberLogin.me");
 			request.getSession().setAttribute("msg", "1");
 			
 		}
