@@ -27,7 +27,7 @@ import vo.ReservationBean;
 /**
  * Servlet implementation class idChkAction
  */
-@WebServlet("/rsv/calendar.do")
+@WebServlet("/Vilsam_yj/rsv/calendar.do")
 public class reserveCalendarAction extends HttpServlet {
    private static final long serialVersionUID = 1L;
        

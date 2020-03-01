@@ -37,7 +37,7 @@ $(document).ready(function() {
         eventLimit: true,
         events: function(start, end, timezone, callback) {
             $.ajax({
-                url: '/rsv/calendar.do',
+                url: '/Vilsam_yj/rsv/calendar.do',
                 type : 'post',
                 data: 'type=${MEMBER_ID}',
                 dataType: 'json',

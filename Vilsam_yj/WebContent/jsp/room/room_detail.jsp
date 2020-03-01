@@ -29,15 +29,9 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-
-
-
 <link rel='stylesheet' href='/Vilsam_yj/fullcalendar/fullcalendar.css'>
 <script src="${pageContext.request.contextPath }/js/fullcal/moment.min.js"></script>
 <script src='/Vilsam_yj/fullcalendar/fullcalendar.js'></script>
-
-
 <style>
 .main-content-wrapper{
 	width:100%;
@@ -125,7 +119,7 @@ $(function() {
 	        eventLimit: true,
 	        events: function(start, end, timezone, callback) {
 	            $.ajax({
-	                url: '/rsv/calendar.do',
+	                url: '/Vilsam_yj/rsv/calendar.do',
 	                type : 'post',
 	                data: 'room_num='+test,
 	                dataType: 'json',
@@ -180,9 +174,7 @@ $(function() {
 								<p class="room-price">&nbsp;&nbsp;&#8361; ${room.room_price }</p>
 								<br>
 									<h2>공간 이름 :${room.room_name }</h2>
-							
 								<br>
-								
 						</div><br><br>
 						<h2>예약날짜 선택</h2>
 						<input type="text" id="reserDate" name="reserDate">
@@ -192,16 +184,11 @@ $(function() {
 						<br><br>
 						<a href="#none" class="btst" id="btnReserChk">예약하기</a>
 						</form>
-					
-					
-
 					</div>
 				</div>
 			</div></div>
 		</div>
-
-		<!-- Room Details Area End -->
-
+	<!-- Room Details Area End -->
 	<jsp:include page="/jsp/common/footer.jsp" flush="true"></jsp:include>
 </body>
 

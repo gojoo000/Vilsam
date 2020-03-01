@@ -35,6 +35,7 @@
 	href="${pageContext.request.contextPath }/jsp/style.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath }/css/loginst.css" />
+	<link rel='stylesheet' href='/Vilsam_yj/css/font-awesome.min.css'>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
 <script src="${pageContext.request.contextPath }/js/newjs.js"></script>

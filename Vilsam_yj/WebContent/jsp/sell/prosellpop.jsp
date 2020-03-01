@@ -6,9 +6,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<!-- Favicon  -->
+<link rel="icon" href="${pageContext.request.contextPath }/img/core-img/favicon.ico">
+<!-- Core Style CSS-->
+<link rel="stylesheet" href="${pageContext.request.contextPath }/css/core-style.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath }/jsp/style.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath }/css/loginst.css" />
 <c:if test="${articleList eq null }"><script>location.href="/Vilsam_yj/stockList.st?PRODUCT_NUM="+${param.num };</script></c:if>
-
+<style>
+	.form {min-width:100%;}
+	th, tr, td {padding: 7px;border:1px solid #9c9c9c;}
+	table{width:100%;}
+</style>
 </head>
 <body>
 <div class="form form--signup">
@@ -21,7 +30,7 @@
 							<th>주문번호</th>
 							<th>입고</th>
 							<th>출고</th>
-							<th>상품코드</th>
+							<!-- <th>상품코드</th> -->
 							<th>날짜</th>
 						</tr>
 						<c:forEach var="stock" items="${articleList}">
@@ -31,7 +40,7 @@
 								<td>${stock.sellnum}</td>
 								<td>${stock.in}</td>
 								<td>${stock.out}</td>
-								<td>${stock.product_num}</td>
+								<%-- <td>${stock.product_num}</td> --%>
 								<td>${stock.dateyy}-${stock.datemm}-${stock.datedd}</td>
 								<%-- <td>${stock.sellnum}</td>
 								<td>${stock.inqty}</td>

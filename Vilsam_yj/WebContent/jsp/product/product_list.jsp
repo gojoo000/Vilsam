@@ -22,7 +22,7 @@
 		window.open("/Vilsam_yj/jsp/product/stockpop.jsp?num="+num,"","width=500, height=150, left=0, top=50");
 	}
 	function showSellPopup(num) {
-		window.open("/Vilsam_yj/jsp/sell/prosellpop.jsp?num="+num,"", "width=900, height=500, left=0, top=50");
+		window.open("/Vilsam_yj/jsp/sell/prosellpop.jsp?num="+num,"", "width=900, height=550, left=0, top=50");
 	}
 </script>
 <!-- Favicon  -->
