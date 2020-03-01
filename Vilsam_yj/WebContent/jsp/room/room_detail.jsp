@@ -20,12 +20,9 @@
 <meta charset="UTF-8">
 <meta name="description" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Title  -->
 <title>Room Details</title>
-
-
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -125,8 +122,8 @@ $(function() {
 	                dataType: 'json',
 	                success: function(data) {//5.map이 일로들어옴
 	                   var json = data.calendarList;
-	                   alert(json);
-	                   alert(data);
+	                   //alert(json);
+	                   //alert(data);
 	                    var events = [];
 	                    $.each(json, function(i, obj) { //i(json에 담긴크기만큼(인덱스)) 반복
 	                       events.push({
