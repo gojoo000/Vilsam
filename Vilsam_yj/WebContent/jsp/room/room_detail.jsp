@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel='stylesheet' href='/Vilsam_yj/fullcalendar/fullcalendar.css'>
 <script src="${pageContext.request.contextPath }/js/fullcal/moment.min.js"></script>
-<script src='/Vilsam_yj/fullcalendar/fullcalendar.js'></script>
+<script src='/Vilsam_yj/fullcalendar/fullcalendar.js' charset="euc-kr"></script>
 <style>
 .main-content-wrapper{
 	width:100%;

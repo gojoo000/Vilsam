@@ -20,7 +20,7 @@
 <link rel='stylesheet' href='/Vilsam_yj/fullcalendar/fullcalendar.css'>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="${pageContext.request.contextPath }/js/fullcal/moment.min.js"></script>
-<script src='/Vilsam_yj/fullcalendar/fullcalendar.js'></script>
+<script src='/Vilsam_yj/fullcalendar/fullcalendar.js' charset="euc-kr"></script>
 <script>
 $(document).ready(function() {
 	 var test = $("#room_num").val();
